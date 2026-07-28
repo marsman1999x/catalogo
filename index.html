@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo CompTIA A+ Hardware</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>📦 Catálogo de Hardware & Redes</h1>
+        <p>Inventario interactivo de componentes CompTIA A+ (220-1201)</p>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar componente (ej. OLED, RJ45, RAM)..." onkeyup="filterItems()">
+        </div>
+    </header>
+
+    <main class="catalog-grid" id="catalogGrid">
+
+        <!-- Categoria 1 -->
+        <div class="card" data-category="displays">
+            <span class="badge">Pantallas</span>
+            <h3>Pantallas LCD & OLED</h3>
+            <p><strong>Tipos:</strong> IPS, TN, VA, OLED, Mini-LED.</p>
+            <p><strong>Atributos:</strong> Densidad de píxeles, tasa de refresco, resolución, gama de color.</p>
+            <p><strong>Componentes:</strong> Inversor, digitalizador táctil.</p>
+        </div>
+
+        <!-- Categoria 2 -->
+        <div class="card" data-category="cables">
+            <span class="badge">Cables y Redes</span>
+            <h3>Cables de Red y Fibra</h3>
+            <p><strong>Cobre:</strong> Cat 5e/6, T568A/T568B, Coaxial, STP, UTP, Direct Burial.</p>
+            <p><strong>Fibra Óptica:</strong> Monomodo, Multimodo.</p>
+            <p><strong>Conectores:</strong> RJ11, RJ45, F-type, ST, SC, LC, Punchdown block.</p>
+        </div>
+
+        <!-- Categoria 3 -->
+        <div class="card" data-category="cables">
+            <span class="badge">Cables y Periféricos</span>
+            <h3>Cables de Video y Datos</h3>
+            <p><strong>Video:</strong> HDMI, DisplayPort, DVI, VGA, USB-C.</p>
+            <p><strong>Almacenamiento:</strong> SATA, eSATA.</p>
+            <p><strong>Periféricos:</strong> USB 2.0, USB 3.0, Serie (DB9), Thunderbolt, Lightning.</p>
+        </div>
+
+        <!-- Categoria 4 -->
+        <div class="card" data-category="ram">
+            <span class="badge">Memoria RAM</span>
+            <h3>Módulos de Memoria</h3>
+            <p><strong>Formatos:</strong> DIMM (Desktop), SODIMM (Laptop).</p>
+            <p><strong>Tecnología:</strong> DDR4, DDR5, Corrección ECC vs Non-ECC.</p>
+            <p><strong>Canales:</strong> Single, Dual, Triple, Quad channel.</p>
+        </div>
+
+        <!-- Categoria 5 -->
+        <div class="card" data-category="storage">
+            <span class="badge">Almacenamiento</span>
+            <h3>Discos Duros y SSD</h3>
+            <p><strong>HDD:</strong> 2.5", 3.5" (5400/7200 RPM).</p>
+            <p><strong>SSD:</strong> Formatos M.2, mSATA. Interfaces NVMe, SATA, PCIe, SAS.</p>
+            <p><strong>Configuraciones:</strong> RAID 0, 1, 5, 6, 10.</p>
+        </div>
+
+        <!-- Categoria 6 -->
+        <div class="card" data-category="motherboard">
+            <span class="badge">Placa Base & CPU</span>
+            <h3>Motherboards y Procesadores</h3>
+            <p><strong>Formatos:</strong> ATX, microATX, ITX.</p>
+            <p><strong>Procesadores:</strong> x86/x64, ARM, sockets Intel/AMD.</p>
+            <p><strong>Seguridad/BIOS:</strong> UEFI, TPM, Secure Boot, HSM.</p>
+        </div>
+
+        <!-- Categoria 7 -->
+        <div class="card" data-category="power">
+            <span class="badge">Energía</span>
+            <h3>Fuentes de Alimentación</h3>
+            <p><strong>Voltajes Entrada:</strong> 110–120 VAC vs 220–240 VAC.</p>
+            <p><strong>Salidas:</strong> 3.3V, 5V, 12V. Conector 20+4 pines.</p>
+            <p><strong>Tipos:</strong> Modulares, redundantes, certificación 80 Plus.</p>
+        </div>
+
+        <!-- Categoria 8 -->
+        <div class="card" data-category="printers">
+            <span class="badge">Impresoras</span>
+            <h3>Dispositivos Multifuncionales</h3>
+            <p><strong>Tecnologías:</strong> Láser (tóner), Inyección de tinta, Térmica, Impacto.</p>
+            <p><strong>Conectividad:</strong> USB, Ethernet, Wireless, Print Server.</p>
+            <p><strong>Lenguajes:</strong> PCL, PostScript.</p>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
